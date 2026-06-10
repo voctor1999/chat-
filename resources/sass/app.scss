@@ -1,0 +1,55 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+// Fontawesome
+@import '~@fortawesome/fontawesome-free/scss/fontawesome';
+@import '~@fortawesome/fontawesome-free/scss/regular';
+@import '~@fortawesome/fontawesome-free/scss/solid';
+@import '~@fortawesome/fontawesome-free/scss/brands';
+
+html {
+    position: relative;
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Microsoft YaHei UI", Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    font-size: 14px;
+}
+
+#base {
+    margin-bottom: 60px;
+}
+
+nav.my_navbar {
+    border-top: 5px solid #0db4f6;
+    margin-bottom: 36px;
+    width: 100%;
+    left: 0;
+    right: 0;
+}
+
+a:hover {
+    text-decoration: underline !important;
+}
+
+small.footer {
+    background-color: #000;
+    color: #eee;
+    height: 45px;
+    line-height: 45px;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
+
+// 验证码图片点击刷新换手型
+img.my_captcha {
+    cursor: pointer;
+}
