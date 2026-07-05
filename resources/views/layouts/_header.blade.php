@@ -28,18 +28,18 @@
                  @else
                  <li class="nav-item dropdown">
                      <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                         <img src="{{url('fakers/avatars/face1.jpg')}}" width="40" alt="avatar" class="img-thumbnail" />
+                         <img src="{{Auth::user()->avatar}}" width="40" alt="avatar" class="img-thumbnail" />
                          {{Auth::user()->name}}
                      </a>
                      <ul class="dropdown-menu">
                          <li class="text-center">
-                             <a class="dropdown-item" href="#">
+                             <a class="dropdown-item" href="{{route('users.show',Auth::user()->id)}}">
                                  <i class="fa-solid fa-user-tie"></i>
                                  个人空间
                              </a>
                          </li>
                          <li class="text-center">
-                             <a class="dropdown-item" href="#">
+                             <a class="dropdown-item" href="{{route('users.edit',Auth::user()->id)}}">
                                  <i class="fa-solid fa-pen-to-square"></i>
                                  编辑资料
                              </a>

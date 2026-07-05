@@ -22837,24 +22837,23 @@ textarea.form-control-lg {
   --fa: "\f8e8";
 }
 
-html {
-  position: relative;
-  height: 100%;
-}
-
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Microsoft YaHei UI", Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   font-size: 14px;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
-#base {
-  margin-bottom: 60px;
+#app {
+  margin-bottom: 16px;
+  flex: 1;
 }
 
 nav.my_navbar {
   border-top: 5px solid #0db4f6;
-  margin-bottom: 36px;
+  margin-bottom: 16px;
   width: 100%;
   left: 0;
   right: 0;
@@ -22864,14 +22863,12 @@ a:hover {
   text-decoration: underline !important;
 }
 
-small.footer, .footer.small {
+footer.footer {
   background-color: #000;
   color: #eee;
-  height: 45px;
-  line-height: 45px;
-  position: absolute;
+  height: 60px;
+  line-height: 60px;
   width: 100%;
-  bottom: 0;
 }
 
 img.my_captcha {
